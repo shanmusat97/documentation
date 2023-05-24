@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#Introduction" class="nav-item">Introduction</a></li>
+            <li><a href="#JS is not Java" class="nav-item">JS is not Java</a></li>
+            <li><a href="#Including JavaScript in HTML" class="nav-item">Including JavaScript in HTML</a></li>
+            <li><a href="#Values" class="nav-item">Values</a></li>
+            <li><a href="#Operators" class="nav-item">Operators</a></li>
+            <li><a href="#Functions" class="nav-item">Functions</a></li>
+            <li><a href="#Arrays" class="nav-item">Arrays</a></li>
+            <li><a href="#OOPS" class="nav-item">OOPS</a></li>
+            <li><a href="#Reference" class="nav-item">Reference</a></li>
+            
+        </ul>
+    </nav>
+<main id="documentation">
+    <header><h1 class="display-3">JAVASCRIPT</h1></header>
+    <section id="Introduction" class="section">
+        <h1>Introduction</h1>
+            <ul>
+                <li>a lightweight programming language ("scripting language")</li>
+                <li>used to make web pages interactive</li>
+                <li>insert dynamic text into HTML (ex: user name)</li>    
+                <li>react to events (ex: page load user click)</li>    
+                <li> get information about a user's computer (ex: browser type)</li>   
+                <li>perform calculations on user's computer (ex: form validation)</li>   
+                <li>case-sensitive</li>
+                </ul>
+    </section>
+    <section id="JS is not Java" class="section">
+        <h1>JS is not Java</h1><br>
+        <div class="bg">
+        <ul>
+            <li>Completely different types of languages that just happen to be similarly named</li>
+            <li>JavaScript - programs are interpreted in the browser</li>    
+            <li> Java - programs are compiled and can be run as stand alone applications</li>   
+        </ul>
+    </div>
+    </section>
+    <section id="Including JavaScript in HTML" class="section">
+        <h1>Including JavaScript in HTML</h1><br>
+        <div class="bg">
+            <ul>
+            <li>Use the <script> </script> tag</li> 
+            <pre> 
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Hello World Example &lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;script type="text/javascript"&gt;
+            &lt;!--
+         document.write("Hello, world!");  
+       //--&gt;
+       &lt;/script &gt;
+       &lt;/body&gt;
+       &lt;/html&gt;
+</pre> 
+<li>output</li>
+<li><img src="images/imafe.png"></li>            
+        </ul>
+    </div>
+    </section>
+    <section id="Values" class="section">
+        <h1>Values</h1><br>
+    <div class="bg">  
+       <p>The JavaScript syntax defines two types of values:
+<ol><li>Fixed values</li>
+<li>Variable values</li></ol></p>
+<p>Fixed values are called Literals.
+Variable values are called Variables.</p> 
+<p><h4>JavaScript Literals</h4>
+The two most important syntax rules for fixed values are:
+
+<ol><li>Numbers are written with or without decimals ex:10.50,1001.</li>
+<li>Strings are text, written within double or single quotes ex:"John Doe",'John Doe'.</li></ol> </p>
+<p><h4>JavaScript Variables</h4>
+    In a programming language, variables are used to store data values.<br>
+    JavaScript uses the keywords var, let and const to declare variables.<br>
+    An equal sign is used to assign values to variables.
+</p>
+    <pre>
+        for var type
+        &lt;script type="text/javascript"&gt;
+        var myname="priya";
+        &lt;/script&gt;
+
+        for let type
+        &lt;script type="text/javascript"&gt;
+        let a=10;
+        &lt;/script&gt;
+
+        for const type
+        &lt;script type="text/javascript"&gt;
+        const b=10;
+        &lt;/script&gt;
+    </pre>
+        </div>
+    </section>
+    <section id="Operators" class="section">
+        <h1>Operators</h1><br>
+    <div class="bg">  
+        <p>let us take an example "3+7=9".Here 3 and 7 are called operands and '+' is called the operator.
+            There are different types of JavaScript operators:
+<ul>
+    <li>Arithmetic Operators</li>
+    <li>Assignment Operators</li>
+    <li>Comparison Operators</li>
+    <li>String Operators</li>
+    <li>Logical Operators</li>
+    <li>Bitwise Operators</li>
+    <li>Ternary Operators</li>
+    <li>Type Operators</li></ul> </p>
+<h2>Arithmetic Operators</h2>
+<img src="images/arith.png">
+<h3>Addition</h3>
+<p>The addition operator (+) adds numbers</p>
+<pre>
+    let x = 5;
+let y = 2;
+let z = x + y;
+</pre>
+<h3>Subtraction</h3>
+<p>
+    The subtraction operator (-) subtracts numbers.
+</p><pre>
+let x = 5;
+let y = 2;
+let z = x - y;
+</pre>
+<h3>Multiplication</h3>
+<p>
+    The multiplication operator (*) multiplies numbers.
+</p>  
+<pre>
+    let x = 5;
+    let y = 2;
+    let z = x * y;
+    </pre>
+    <h3>Division</h3>
+<p>
+    The division operator (/) divides numbers.
+</p>  
+<pre>
+    let x = 5;
+    let y = 2;
+    let z = x / y;
+    </pre>
+    <h3>Modulo division</h3><p>
+        The modulus operator (%) returns the division remainder.
+    </p>
+    <pre>
+        let x = 5;
+        let y = 2;
+        let z = x % y;
+        </pre>
+        <h3>Increment</h3>
+        <p>
+            The increment operator (++) increments numbers.
+        </p>
+        <pre>
+            let x = 5;
+x++;
+let z = x;
+        </pre>
+        <h3>Decrement</h3>
+        <p>
+            The decrement operator (--) decrements numbers.
+        </p>
+        <pre>
+            let x = 5;
+x--;
+let z = x;
+        </pre>
+        <h3>Exponentiation</h3>
+        <p>The exponentiation operator (**) raises the first operand to the power of the second operand.<br>
+            x ** y produces the same result as Math.pow(x,y)</p>
+        <pre>
+            let x = 5;
+let z = x ** 2;  
+        </pre>
+<pre>
+    let x = 5;
+let z = Math.pow(x,2);
+</pre>
+<h3>Operator precedence</h3>
+<p>
+Operator precedence describes the order in which operations are performed in an arithmetic expression.<br>
+<pre>let x = 100 + 50 * 3;</pre>
+Is the result of example above the same as 150 * 3, or is it the same as 100 + 150?
+
+Is the addition or the multiplication done first?
+
+As in traditional school mathematics, the multiplication is done first.
+
+Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+
+And (as in school mathematics) the precedence can be changed by using parentheses.
+
+When using parentheses, the operations inside the parentheses are computed first:
+<pre>let x = (100 + 50) * 3;</pre>
+</p>
+<h2>Assignment Operators</h2>
+<p>
+    Assignment operators assign values to JavaScript variables.</p>
+   <br> <img src="images/assign.png">
+    
+<p> The Addition Assignment Operator (+=) adds a value to a variable.
+    
+    <pre>
+    let x = 10;
+    x += 5;</pre>
+</p>
+<h2>Comparison Operators</h2>
+<p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+<img src="images/comp2.png"><br>
+<h2>String Operators</h2>
+<p>
+    <h3>String Comparison</h3>
+All the comparison operators above can also be used on strings:
+
+<pre>
+let text1 = "A";
+let text2 = "B";
+let result = text1> text2;
+</pre>
+
+Note that strings are compared alphabetically:
+<pre>
+let text1 = "20";
+let text2 = "5";
+let result = text1>text2;</pre>
+<h3> String Addition</h3>
+The + can also be used to add (concatenate) strings:
+
+<pre>
+let text1 = "John";
+let text2 = "Doe";
+let text3 = text1 + " " + text2;
+</pre>
+The += assignment operator can also be used to add (concatenate) strings:
+
+<pre>
+let text1 = "What a very ";
+text1 += "nice day";
+</pre>
+The result of text1 will be:
+<pre>
+What a very nice day</pre>
+<h3>String concatenation</h3>
+When used on strings, the + operator is called the concatenation operator.
+
+Adding Strings and Numbers
+Adding two numbers, will return the sum, but adding a number and a string will return a string:
+
+<pre>
+let x = 5 + 5;
+let y = "5" + 5;
+let z = "Hello" + 5;
+</pre>
+The result of x, y, and z will be:
+<pre>
+10
+55
+Hello5</pre>
+If you add a number and a string, the result will be a string!
+</p>
+<h2>Logical Operators</h2>
+<p><img src="images/logi.png">
+</p>
+<h2>Bitwise Operators</h2>
+<p>
+    Bit operators work on 32 bits numbers.
+Any numeric operand in the operation is converted into a 32 bit number. 
+The result is converted back to a JavaScript number.<br></p>
+<img src="images/bit.png">
+    <h4>Ternary Operators</h4>
+    <p>
+        A ternary operator evaluates a condition and executes a block of code based on the condition.
+
+Its syntax is:
+
+<pre>condition ? expression1 : expression2</pre>
+
+The ternary operator evaluates the test condition.
+
+If the condition is true, expression1 is executed.
+If the condition is false, expression2 is executed.
+The ternary operator takes three operands, hence, the name ternary operator. 
+It is also known as a conditional operator.
+<pre>
+    // program to check pass or fail
+
+let marks = prompt('Enter your marks :');
+
+// check the condition
+let result = (marks >= 40) ? 'pass' : 'fail';
+
+console.log(`You ${result} the exam.`);
+</pre>
+<p>If the condition is True,</p>
+<pre>
+    Enter your marks: 78
+You pass the exam.
+</pre>
+<p>If the condition is False,</p>
+<pre>
+    Enter your marks: 35
+You fail the exam.
+</pre>
+    </p>
+    <h2>Type Operators</h2>
+    <p><img src="images/type.png"></p>
+</div>
+    </section>
+    <section id="Functions" class="section">
+        <h1>Functions</h1><br>
+    <div class="bg">  
+<p>
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+<pre>
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}</pre>
+<h5>Function with a return value</h5>
+<pre>Calculate the product of two numbers, and return the result:
+
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}</pre>
+The result in x will be:
+<pre>
+12</pre>
+</p>
+        </div>
+    </section>
+    <section id="Arrays" class="section">
+        <h1>Arrays</h1><br>
+    <div class="bg">  
+<p>An array is a special variable, which can hold more than one value:
+
+   <pre> const cars = ["Saab", "Volvo", "BMW"];
+</pre><p>
+another array defining method
+</p><pre>
+    const person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+person.length;    // Will return 3
+person[0];        // Will return "John"
+
+</pre>
+   </p>
+        </div>
+    </section>
+    <section id="OOPS" class="section">
+        <h1>OOPS</h1><br>
+    <div class="bg">  
+<p> An Object is an instance of a class.
+     Objects are everywhere in JavaScript, almost every element is an Object whether it is a function, array, or string.
+     An Object is a unique entity that contains properties and methods. 
+     For example “a car” is a real-life Object, which has some characteristics like color, type, model, and horsepower and performs certain actions like driving.
+      The characteristics of an Object are called Properties in Object-Oriented Programming and the actions are called methods.  </p>
+     <pre>
+        // Defining object
+        let person = {
+            first_name:'Mukul',
+            last_name: 'Latiyan',
+          
+            //method
+            getFunction : function(){
+                return (`The name of the person is 
+                  ${person.first_name} ${person.last_name}`)
+            },
+            //object within object
+            phone_number : {
+                mobile:'12345',
+                landline:'6789'
+            }
+        }
+        console.log(person.getFunction()); 
+        console.log(person.phone_number.landline);
+     </pre>  
+    <p>the output will be</p>
+    <pre>
+        The name of the person is Mukul Latiyan
+        6789
+    </pre>
+    <h3>4 main principles in OOPS</h3>
+    <ul>
+        <li>Abstraction</li>
+        <li>Encapsulation</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+    </ul>
+ </div>
+    </section>
+    <section id="Reference" class="section">
+        <h1>Reference</h1><br>
+    <div class="bg">  
+<p>The entire language is described in detail.for further details,you can use the external websites.</p>
+        </div>
+    </section>
+</body>
+</html>
